@@ -28,7 +28,7 @@ const request = {
     del: <T> (url: string) => axios.delete<T>(url).then(responseBody),
 }
 
-const Acitivities = {
+const Activities = {
     list: () => request.get<Activity[]>('/activities'),
     details: (id: string) => request.get<Activity>(`/activities/${id}`),
     create: (activity: Activity) => axios.post<void>('/activities', activity),
@@ -37,7 +37,7 @@ const Acitivities = {
 }
 
 const agent = {
-    Acitivities
+    Activities
 }
 
 export default agent;
