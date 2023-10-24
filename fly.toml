@@ -10,7 +10,7 @@ primary_region = "sin"
   image = "yewkwong/reactivities:latest"
 
 [env]
-  ASPNETCORE_URLS="http:/?+:8080"
+  ASPNETCORE_URLS="http://+:8080"
   Cloudinary__CloudName="dkfotujxy"
   Cloudinary__ApiKey="363833538545542"
 
